@@ -79,6 +79,14 @@ export default function App() {
       };
 
       console.log("Localização:", coords);
+
+      setLocations([
+       {
+          id: 0,
+          latitude: coords.latitude,
+          longitude: coords.longitude,
+        },
+    ]);
     } catch (error) {
       console.log(error);
 
